@@ -1,10 +1,9 @@
 ---
-title: "Ontology"
-keywords: sample homepage
+title: Ontology
 sidebar: ont_doc_en
-permalink: index.html
+permalink: ontology_en.html
+folder: doc_en
 ---
-
 
 <h1 align="center">Ontology </h1>
 <h4 align="center">Version 0.6.0 </h4>
