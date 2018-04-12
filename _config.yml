@@ -116,14 +116,3 @@ description: "Intended as a documentation theme based on Jekyll for technical wr
 # needed for sitemap.xml file only
 url: http://idratherbewriting.com
 baseurl: /ontio
-=======
-  - README.md
-  - Rakefile
-  - Gemfile
-  - Gemfile.lock
-  - changelog.md
-  - "*.Rmd"
-  - vendor
-  - .travis.yml
-theme: jekyll-theme-hacker
->>>>>>> a5f0e3d7277c1266426f679a43d685ab40a9df61
