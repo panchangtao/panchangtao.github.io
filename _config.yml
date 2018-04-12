@@ -33,6 +33,7 @@ port: 4000
 # the port where the preview is rendered. You can leave this as is unless you have other Jekyll builds using this same port that might cause conflicts. in that case, use another port such as 4006.
 
 exclude:
+<<<<<<< HEAD
   - .idea/
   - .gitignore
 # these are the files and directories that jekyll will exclude from the build
@@ -115,3 +116,14 @@ description: "Intended as a documentation theme based on Jekyll for technical wr
 # needed for sitemap.xml file only
 url: http://idratherbewriting.com
 baseurl: /ontio
+=======
+  - README.md
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
+  - changelog.md
+  - "*.Rmd"
+  - vendor
+  - .travis.yml
+theme: jekyll-theme-hacker
+>>>>>>> a5f0e3d7277c1266426f679a43d685ab40a9df61
