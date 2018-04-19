@@ -23,13 +23,17 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: 总体介绍
-      url: /ontology_en.html
+    - title: open letter
+      url: /first_open_letter_en.html
       output: web, pdf
       type: homepage
 
-    - title: 社区激励机制
-      url: 
+    - title: tutorial for developer
+      url: /tutorial_for_developer_en.html
+      output: web, pdf
+
+    - title: standard process for contributor
+      url: /standard_process_for_contributor_en.html
       output: web, pdf
 
   - title: Ontology
@@ -37,7 +41,7 @@ entries:
     folderitems:
 
     - title: 功能和特点介绍
-      url: 
+      url: /ontology_en.html
       output: web, pdf
 
     - title: 安装节点
@@ -52,9 +56,18 @@ entries:
       url: 
       output: web, pdf
 
-    - title: RPC/Restful API
-      url: 
-      output: web, pdf
+      subfolders:
+      - title: RPC/Restful API
+        output: web
+        subfolderitems:
+
+        - title: RPC API
+          url: /ontrpcapi_en.html
+          output: web
+
+        - title: Restful API
+          url: /restfulapi_en.html
+          output: web
 
     - title: 共识机制说明
       url: 
@@ -69,32 +82,57 @@ entries:
     folderitems:
 
     - title: 总体介绍
-      url: 
+      url: /ontology-DID_en.html
       output: web, pdf
 
     - title: Identification Protocol
-      url: 
+      url: /ONTID_protocol_spec_en.html
       output: web, pdf
 
     - title: Verifiable Claim Protocol
-      url: 
+      url: /claim_spec_en.html
       output: web, pdf
 
     - title: TrustAnchor Access Stardard
-      url: 
+      url: /verification_provider_specification_en.html
       output: web, pdf
 
   - title: SDKs
     output: web, pdf
     folderitems:
 
-    - title: Java SDK
-      url: 
-      output: web, pdf
-
     - title: TS SDK
       url: 
       output: web, pdf
+
+      subfolders:
+      - title: Java SDK
+        output: web
+        subfolderitems:
+
+        - title: 介绍和安装
+          url: /ontology_java_sdk_en.html
+          output: web
+
+        - title: 节点控制
+          url: /ontology_java_sdk_blockchain_interop_en.html
+          output: web
+
+        - title: 数字身份管理
+          url: /ontology_java_sdk_identity_claim_en.html
+          output: web
+
+        - title: 数字资产管理
+          url: /ontology_java_sdk_asset_en.html
+          output: web
+
+        - title: 智能合约部署和调用
+          url: /ontology_java_sdk_smartcontract_en.html
+          output: web
+
+        - title: 存证
+          url: /ontology_java_sdk_record_en.html
+          output: web
 
     - title: Go SDK
       url: 
@@ -109,11 +147,11 @@ entries:
       output: web, pdf
 
     - title: 智能合约开发指南
-      url: 
+      url: /smart_contract_tutorial_en.html
       output: web, pdf
 
     - title: Ontology wasm
-      url: 
+      url: /smart_contract_tutorial_wasm_en.html
       output: web, pdf
 
   - title: DDXF
@@ -121,7 +159,7 @@ entries:
     folderitems:
 
     - title: 总体介绍
-      url: 
+      url: /ontology_ddxf_en.html
       output: web, pdf
 
     - title: 数据交换协议ONT DATA

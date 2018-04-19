@@ -1,8 +1,8 @@
 ---
 title: Documentation_cn
-sidebar: ont_doc_cn
+sidebar: ont_doc_zh
 permalink: documentation_cn.html
-folder: doc_cn
+folder: doc_zh
 ---
 
 <p align="center">

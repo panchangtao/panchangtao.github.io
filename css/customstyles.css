@@ -1198,3 +1198,11 @@ h4.panel-title {
         display:block !important;
     }
 }
+
+div#toc {
+    position: fixed;
+    right: 10px;
+    max-width: 330px;
+    top: 67px;
+    display: none;
+}

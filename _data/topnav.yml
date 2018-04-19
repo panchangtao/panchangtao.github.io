@@ -11,6 +11,6 @@ topnav_dropdowns:
     - title: Language
       folderitems:
         - title: ENGLISH
-          url: /ontology_en.html
+          url: /first_open_letter_en.html
         - title: 中文
-          url: /ontology_zh.html
+          url: /first_open_letter_zh.html

@@ -1,8 +1,8 @@
 ---
-title: "Ontology"
+title: 
 keywords: sample homepage
 sidebar: ont_doc_en
-permalink: index.html
+permalink: first_open_letter_en.html
 ---
 
 
