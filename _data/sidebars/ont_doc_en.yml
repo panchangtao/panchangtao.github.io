@@ -24,7 +24,7 @@ entries:
     folderitems:
 
     - title: open letter
-      url: /first_open_letter_en.html
+      url: /letter_en.html
       output: web, pdf
       type: homepage
 

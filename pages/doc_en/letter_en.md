@@ -2,11 +2,13 @@
 title: 
 keywords: sample homepage
 sidebar: ont_doc_en
-permalink: first_open_letter_en.html
+permalink: letter_en.html
+folder: doc_en
+url: letter_en.html
 ---
 
 
-[中文版](../zh-CN\the-first-open-letter-to-the-ontology-technology-community-cn.md)
+[中文版](./tutorial_for_developer_zh.html)
 
 
 <h1 align="center">The First Open Letter to the Ontology Technology Community </h1>
