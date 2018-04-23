@@ -7,19 +7,13 @@ folder: doc_zh
 
 
 
-
+[English](testnet.md) | 中文
 
 <h1 align="center">Ontology </h1>
 <p align="center" class="version">Version 0.7.0 </p>
 
-[![GoDoc](https://godoc.org/github.com/ontio/ontology?status.svg)](https://godoc.org/github.com/ontio/ontology)
-[![Go Report Card](https://camo.githubusercontent.com/2e9915c767bfcd531d15633034a84b71202afefa/68747470733a2f2f676f7265706f7274636172642e636f6d2f62616467652f6769746875622e636f6d2f6f6e74696f2f6f6e746f6c6f6779)](https://goreportcard.com/report/github.com/ontio/ontology)
-[![Travis](https://travis-ci.org/ontio/ontology.svg?branch=master)](https://travis-ci.org/ontio/ontology)
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ontio/ontology?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-[English](testnet.md) | 中文
-
-# 服务器部署
+## 服务器部署
 成功运行ontology可以通过以下两种方式进行部署
 
 * 单机部署
@@ -135,11 +129,11 @@ $ - 输入你的钱包口令
 
 了解更多请运行 `./ontology --help`.
 
-# 简单示例
-## 合约
+## 简单示例
+### 合约
 [合约Guide](https://github.com/ontio/documentation/tree/master/smart-contract-tutorial)
 
-## ONT转账调用示例
+### ONT转账调用示例
   contract:合约地址； - from: 转出地址； - to: 转入地址； - value: 资产转移数量；
 ```shell
   .\ontology asset transfer --caddr=ff00000000000000000000000000000000000001 --value=500 --from  TA6nAAdX77wcsAnuBQxG61zXg3vJUAPpgk  --to TA6Hsjww86b9KBbXFyKEayMcVVafoTGH4K  --password=xxx

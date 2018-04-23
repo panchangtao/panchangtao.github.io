@@ -6,7 +6,7 @@ permalink: ontology-DID_zh.html
 ---
 
 
-[English Version](./README.md)
+[English](./README.md)  /  中文
 
 
 <h1 align="center">Ontology Distributed Identity Framework (ONTID)  </h1>
