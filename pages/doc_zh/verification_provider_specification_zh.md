@@ -3,6 +3,7 @@ title:
 keywords: sample homepage
 sidebar: ont_doc_zh
 permalink: verification_provider_specification_zh.html
+folder: doc_zh
 ---
 
 

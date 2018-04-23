@@ -3,6 +3,7 @@ title:
 keywords: sample homepage
 sidebar: ont_doc_zh
 permalink: standard_process_for_contributor_zh.html
+folder: doc_zh
 ---
 
 
