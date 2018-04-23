@@ -1,5 +1,5 @@
 ---
-title: ""
+title: 
 keywords: sample homepage
 sidebar: ont_doc_en
 permalink: index.html

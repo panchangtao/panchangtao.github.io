@@ -28,7 +28,7 @@ entries:
       output: web, pdf
       type: homepage
 
-    - title: Ontology developers tutorial
+    - title: Ontology developers guide
       url: /tutorial_for_developer_en.html
       output: web, pdf
 
@@ -70,11 +70,7 @@ entries:
           output: web
 
     - title: Consensus
-      url: 
-      output: web, pdf
-
-    - title: authority management
-      url: 
+      url: /vbft_intro_en.html
       output: web, pdf
 
   - title: Ontology DID
@@ -171,7 +167,7 @@ entries:
     folderitems:
 
     - title: Overview of Ontology SmartContract
-      url: 
+      url: /smart_contract_tutorial_overview_en.html
       output: web, pdf
 
     - title: Introduction of WASM-VM

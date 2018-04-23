@@ -40,7 +40,7 @@ In the entire trust ecosystem, the following participating roles will be include
 
 “Entity” refers to individuals, legal entities (organizations, enterprises, institutions, etc.), objects (mobile phones, automobiles, IoT devices, etc.), and contents (articles, copyrights, etc.) in the real world, and “identity” refers to the entity's identity within the network. Ontology uses Ontology Identifier (ONT ID) to identify and manage the entities' identities. On Ontology blockchain, one entity can correspond to multiple individual identities, and there is no relation between multiple identities.
 
-[>> Learn more](./docs/en/ONTID_protocol_spec.md)
+[>> Learn more](./ONTID_protocol_spec_en.html)
 
 ### **Verifiable Claim Protocol**
 
@@ -48,7 +48,7 @@ A statement to confirm a claim made by one entity about another (including thems
 
 
 ![](./images/20180316233010.png)
-[>> Learn more](./docs/en/claim_spec.md)
+[>> Learn more](./claim_spec_en.html)
 
 ## Deploy
 
@@ -61,13 +61,13 @@ At the same time, **ONT ID is an open protocol, and we also support the use of d
 
 * Step 2 Deploy IDContract 
     
-    [Here](./resources/smart-contract/NeoVM/IdContract.avm) to download .avm file ，and [>> smart contract tutorial](https://github.com/ontio/documentation/tree/master/smart-contract-tutorial)，deploy this .avm to Blockchain.
+    [Here](https://github.com/ontio/ontology-DID/blob/master/resources/smart-contract/NeoVM/IdContract.avm) to download .avm file ，and [>> smart contract tutorial](./smart_contract_tutorial_en.html)，deploy this .avm to Blockchain.
 
 
 
 ## Getting Started
 
-Enter [>>Quick Development Guide ](./docs/en/get_started.md)to Get Started.
+Enter [>>Quick Development Guide ](https://github.com/ontio/ontology-DID/blob/master/docs/en/get_started.md)to Get Started.
 
 Of course, you can also refer directly to our various SDKs and RPC interfaces, including the following:
 
@@ -83,7 +83,7 @@ Trust Anchor refers to the partner that provides authentication services on the 
 
 [Here](https://info.ont.io/cooperation/en) to join us. 
 
-If you have been a trust anchor,please go to [>> The Access Standard for Trust Anchor](./docs/en/verification_provider_specification.md) for details.
+If you have been a trust anchor,please go to [>> The Access Standard for Trust Anchor](./verification_provider_specification_en.html) for details.
 
 
 

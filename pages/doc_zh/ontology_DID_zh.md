@@ -40,7 +40,7 @@ Ontology DID（简称：ONT ID）是一个去中心化的身份标识协议，�
 
 实体是指现实世界中的个人、组织（组织机构、企事业单位等）、物品（手机、汽车、IOT设备等）、内容（文章、版权等），而身份是指实体在网络上的对应标识。本体网络使用本体身份标识（ONT ID）来标识和管理实体在链上的数字身份。在本体区块链上，一个实体可以对应到多个身份标识，且多个身份标识之间没有任何关联。
 
-[>> 详细了解](./docs/cn/ONTID_protocol_spec_cn.md)
+[>> 详细了解](./ONTID_protocol_spec_zh.html)
 
 ### **可信申明协议**
 
@@ -48,7 +48,7 @@ Ontology DID（简称：ONT ID）是一个去中心化的身份标识协议，�
 
 
 ![](./images/20180316233010.png)
-[>> 详细了解](./docs/cn/claim_spec_cn.md)
+[>> 详细了解](./claim_spec_zh.html)
 
 ## 部署安装
 
@@ -60,13 +60,13 @@ Ontology DID（简称：ONT ID）是一个去中心化的身份标识协议，�
 
 * 第二步 部署IDContract智能合约
     
-    请在[这里](./resources/smart-contract/NeoVM/IdContract.avm)下载部署文件，并进入[本体智能合约开发指南](https://github.com/ontio/documentation/tree/master/smart-contract-tutorial)，将这本智能合约部署到区块链。
+    请在[这里](https://github.com/ontio/ontology-DID/blob/master/resources/smart-contract/NeoVM/IdContract.avm)下载部署文件，并进入[本体智能合约开发指南](./smart_contract_tutorial_zh.html)，将这本智能合约部署到区块链。
 
 
 
 ## 开始使用
 
-进入 [>>快速开发指南](./docs/en/get_started.md)开始了解.
+进入 [>>快速开发指南](https://github.com/ontio/ontology-DID/blob/master/docs/cn/get_started_cn.md)开始了解.
 
 当然您也可以直接参考我们的各种SDK和RPC接口,包括以下:
 
@@ -81,7 +81,7 @@ Ontology DID（简称：ONT ID）是一个去中心化的身份标识协议，�
 
 希望成为信任锚，[这里](https://info.ont.io/cooperation/zh)申请加入。
 
-如果您是信任锚，请进入[>> 本体信任锚接入标准](./docs/cn/verification_provider_specification_cn.md)了解接入流程和标准。
+如果您是信任锚，请进入[>> 本体信任锚接入标准](./verification_provider_specification_zh.html)了解接入流程和标准。
 
 
 

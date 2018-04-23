@@ -44,7 +44,7 @@ entries:
       url: /ontology_features_zh.html
       output: web, pdf
 
-    - title: 安装节点
+    - title: 环境配置
       url: /ontology_install_zh.html
       output: web, pdf
 
@@ -70,11 +70,7 @@ entries:
           output: web
 
     - title: 共识机制说明
-      url: 
-      output: web, pdf
-
-    - title: 权限管理
-      url: 
+      url: /vbft_intro_zh.html
       output: web, pdf
 
   - title: Ontology DID
@@ -171,7 +167,7 @@ entries:
     folderitems:
 
     - title: 总体介绍
-      url: 
+      url: /smart_contract_tutorial_overview_zh.html
       output: web, pdf
 
     - title: WASM-VM 简介
