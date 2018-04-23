@@ -3,6 +3,7 @@ title:
 keywords: sample homepage
 sidebar: ont_doc_zh
 permalink: ontology_java_sdk_identity_claim_zh.html
+folder: doc_zh
 ---
 
 

@@ -3,12 +3,13 @@ title:
 keywords: sample homepage
 sidebar: ont_doc_en
 permalink: standard_process_for_contributor_en.html
+folder: doc_en
 ---
 
 
-[中文](https://github.com/ontio/documentation/blob/master/zh-CN/standard_process_for_contributor.md)
+English / [中文](./standard_process_for_contributor_zh.html)
 
-# **Standard process for community contributions**
+<h1 align="center">Standard process for community contributions</h1>
 
 #### (1) Personal Developer or Group Technical contributions
 

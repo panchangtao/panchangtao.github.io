@@ -3,14 +3,14 @@ title:
 keywords: sample homepage
 sidebar: ont_doc_zh
 permalink: first_open_letter_zh.html
+folder: doc_zh
 ---
 
 
-[English Version](../EN/the-first-open-letter-to-the-ontology-technology-community.md)
-
+[English](./first_open_letter_en.html) / 中文
 
 <h1 align="center">给本体技术社区的第一封公开信 </h1>
-<h4 align="center">By Ontology | Updated 2018/03/30</h4>
+<p align="center" class="version">By Ontology | Updated 2018/03/30 </p>
 
 本体是一个规划较为庞大的基础性公有链，但我们不会采用一个封闭开发集中推出的模式，而是以开放、开源的模式与技术社区共同进行快速迭代，也可以较快地将其逐步应用到不同的场景中，并且在应用中不断得到反馈并加强实际应用所需要的功能。因此我们会采用多版本快速迭代的形式，不断推进基础链和相关应用服务的体系。在第一阶段我们会开放开源第一批相关项目，其中包括已接近完成第一版并进入第一版测试阶段的项目，也包括一些在设计开发中的项目，尽早地进行开源模式开发可以让技术社区尽早地选择各自感兴趣的项目进行参与。还有一部分在规划设计阶段的项目在后续会持续开源。在第一版中，包括了以下主要项目和内容。
 

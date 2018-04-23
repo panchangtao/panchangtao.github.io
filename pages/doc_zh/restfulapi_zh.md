@@ -6,8 +6,10 @@ permalink: restfulapi_zh.html
 folder: doc_zh
 ---
 
+[English](./restfulapi_en.html) / 中文
 
-# Ontology Restful API
+<h1 align="center">Ontology Restful API </h1>
+<p align="center" class="version">版本 0.7.0 </p>
 
 * [Introduction](#Introduction)
 * [Restful API list](#Restful API list)
@@ -55,7 +57,7 @@ This document describes the restful api format for the http/https used in the On
 
 Get the generate block time
 
-##### GET
+GET
 
 ```
 /api/v1/node/generateblocktime

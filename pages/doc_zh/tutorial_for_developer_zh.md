@@ -7,11 +7,11 @@ folder: doc_zh
 ---
 
 
-[English Version](./tutorial_for_developer.md)
+[English](./tutorial_for_developer_en.html) / 中文
 
 
 <h1 align="center"> 本体开发者新手指南</h1>
-<h4 align="center">版本 0.6.0 </h4>
+<p align="center" class="version">版本 0.7.0 </p>
 
 ## 概述
 

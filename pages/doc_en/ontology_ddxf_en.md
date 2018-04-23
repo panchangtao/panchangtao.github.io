@@ -3,14 +3,15 @@ title:
 keywords: sample homepage
 sidebar: ont_doc_en
 permalink: ontology_ddxf_en.html
+folder: doc_en
 ---
 
 
-[中文版](README_cn.md)
+English / [中文](./ontology_ddxf_zh.html)
 
 
 <h1 align="center">Distributed Data eXchange Framework</h1>
-<h4 align="center">Version V0.6.0 </h4>
+<p align="center" class="version">Version 0.7.0 </p>
 
 ## Overview
 

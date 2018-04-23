@@ -3,13 +3,14 @@ title:
 keywords: sample homepage
 sidebar: ont_doc_en
 permalink: ONTID_protocol_spec_en.html
+folder: doc_en
 ---
 
 
-[中文版](../cn/ONTID_protocol_spec_cn.md)
+English / [中文](./ONTID_protocol_spec_zh.html)
 
 <h1 align="center">Ontology Distributed Identification Protocol</h1>
-<h4 align="center">Version 0.7.0 </h4>
+<p align="center" class="version">Version 0.7.0 </p>
 
 
 “Entity” refers to individuals, legal entities (organizations, enterprises, institutions, etc.), objects (mobile phones, automobiles, IoT devices, etc.), and contents (articles, copyrights, etc.) in the real world, and “identity” refers to the entity's identity within the network. Ontology uses Ontology Identifier (ONT ID) to identify and manage the entities' identities. On Ontology Blockchain, one entity can correspond to multiple individual identities, and there is no relation between multiple identities.
@@ -224,5 +225,6 @@ The recovery account can implement a variety of access control logic, such as (m
 - `OR` control account
   
    This is equivalent to (1, n) threshold control account.
+
 
 

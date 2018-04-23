@@ -3,13 +3,14 @@ title:
 keywords: sample homepage
 sidebar: ont_doc_zh
 permalink: claim_spec_zh.html
+folder: doc_zh
 ---
 
 
-[English version](../en/claim_spec.md)
+[English](./claim_spec_en.html) / 中文
 
 <h1 align="center">可信申明协议规范</h1>
-<h4 align="center">Version 0.7.0 </h4>
+<p align="center" class="version">Version 0.7.0 </p>
 
 可信声明的整个工作流程如下图所示，包含三大部分，即
 
@@ -17,7 +18,7 @@ permalink: claim_spec_zh.html
 - 签发声明；
 - 验证声明。
 
-![claim workflow](../../images/claim_workflow.png)
+![claim workflow](./images/claim_workflow.png)
 
 ## 1. 签发   
 可信声明的颁发过程涉及两个角色，即签发者（Issuer）与接收者（Receipient）。

@@ -1,15 +1,16 @@
 ---
 title: 
-keywords: sample homepage
 sidebar: ont_doc_zh
 permalink: ontology_ts_sdk_smartcontract_zh.html
 folder: doc_zh
 ---
 
 
+[English](./ontology_ts_sdk_smartcontract_en.html) / 中文
 
+<h1 align="center">智能合约的部署和调用 </h1>
+<p align="center" class="version">版本 0.7.0 </p>
 
-# 智能合约的部署和调用
 
 ## 1. 部署合约
 

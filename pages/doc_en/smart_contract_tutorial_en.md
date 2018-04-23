@@ -3,11 +3,13 @@ title:
 keywords: sample homepage
 sidebar: ont_doc_en
 permalink: /smart_contract_tutorial_en.html
+folder: doc_en
 ---
 
+English / [中文](./smart_contract_tutorial_zh.html)
 
 <h1 align="center">Ontology Smart Contract</h1>
-<h4 align="center">Version V0.6.0 </h4>
+<p align="center" class="version">Version 0.7.0 </p>
 
 ## What is a smart contract?
 

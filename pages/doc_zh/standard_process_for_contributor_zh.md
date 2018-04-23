@@ -6,8 +6,9 @@ permalink: standard_process_for_contributor_zh.html
 folder: doc_zh
 ---
 
+[English](./standard_process_for_contributor_en.html) / 中文
 
-## **社区贡献标准流程**
+<h1 align="center">社区贡献标准流程</h1>
 
 #### 一、个人或小组技术贡献者
 

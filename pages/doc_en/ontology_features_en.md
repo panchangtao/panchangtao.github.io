@@ -5,18 +5,11 @@ permalink: ontology_features_en.html
 folder: doc_en
 ---
 
+English / [中文](./ontology_features_zh.html)
 
-<h1 align="center">Ontology </h1>
-<h4 align="center">Version 0.7.0 </h4>
+<h1 align="center">Ontology Features</h1>
+<p align="center" class="version">Version 0.7.0 </p>
 
-[![GoDoc](https://godoc.org/github.com/ontio/ontology?status.svg)](https://godoc.org/github.com/ontio/ontology)
-[![Go Report Card](https://goreportcard.com/badge/github.com/ontio/ontology)](https://goreportcard.com/report/github.com/ontio/ontology)
-[![Travis](https://travis-ci.org/ontio/ontology.svg?branch=master)](https://travis-ci.org/ontio/ontology)
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ontio/ontology?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-
-
-English | [中文](features_CN.md) 
-# Features
 
 - Scalable lightweight universal smart contract
 - Scalable WASM contract support

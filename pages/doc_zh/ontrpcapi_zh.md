@@ -6,8 +6,11 @@ permalink: ontrpcapi_zh.html
 folder: doc_zh
 ---
 
+[English](./ontrpcapi_en.html) / 中文
 
-# ONT Rpc Api
+<h1 align="center">Ontology Rpc Api </h1>
+<p align="center" class="version">版本 0.7.0 </p>
+
 
 * [Introduction](#Introduction)
 * [Rpc API list](#Rpc API list)

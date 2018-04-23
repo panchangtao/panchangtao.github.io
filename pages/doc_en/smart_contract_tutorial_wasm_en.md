@@ -3,10 +3,14 @@ title:
 keywords: sample homepage
 sidebar: ont_doc_en
 permalink: smart_contract_tutorial_wasm_en.html
+folder: doc_en
 ---
 
+English / [中文](./smart_contract_tutorial_wasm_zh.html)
 
-# Wasm Smart Contract
+
+<h1 align="center">Wasm Smart Contract</h1>
+<p align="center" class="version">Version 0.7.0 </p>
 
 ## Introduction
 Wasm (WebAssembly) is a binary instruction format for stack-based virtual machines. Wasm is designed to be a portable target for compiling high-level languages such as C/C++/Rust, and supports deployment of client and server applications on the Web. Ontology supports smart contracts written in the wasm format.

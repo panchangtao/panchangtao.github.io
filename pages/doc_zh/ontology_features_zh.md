@@ -5,18 +5,10 @@ permalink: ontology_features_zh.html
 folder: doc_zh
 ---
 
+[English](./ontology_features_en.html) / 中文
 
-
-<h1 align="center">Ontology </h1>
-<h4 align="center">Version 0.7.0 </h4>
-
-[![GoDoc](https://godoc.org/github.com/ontio/ontology?status.svg)](https://godoc.org/github.com/ontio/ontology)
-[![Go Report Card](https://goreportcard.com/badge/github.com/ontio/ontology)](https://goreportcard.com/report/github.com/ontio/ontology)
-[![Travis](https://travis-ci.org/ontio/ontology.svg?branch=master)](https://travis-ci.org/ontio/ontology)
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ontio/ontology?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-
-[English](features.md) | 中文
-# 特性
+<h1 align="center">Ontology 特性</h1>
+<p align="center" class="version">版本 0.7.0 </p>
 
 * 可扩展的轻量级通用智能合约
 * 可扩展的WASM合约的支持

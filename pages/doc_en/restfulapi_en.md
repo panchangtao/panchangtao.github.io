@@ -3,10 +3,13 @@ title:
 keywords: sample homepage
 sidebar: ont_doc_en
 permalink: restfulapi_en.html
+folder: doc_en
 ---
 
+English / [中文](./restfulapi_zh.html)
 
-# Ontology Restful API
+<h1 align="center">Ontology Restful API</h1>
+<p align="center" class="version">Version 0.7.0 </p>
 
 * [Introduction](#Introduction)
 * [Restful API list](#Restful API list)
@@ -54,7 +57,7 @@ This document describes the restful api format for the http/https used in the On
 
 Get the generate block time
 
-##### GET
+GET
 
 ```
 /api/v1/node/generateblocktime

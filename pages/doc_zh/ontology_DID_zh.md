@@ -2,15 +2,16 @@
 title: 
 keywords: sample homepage
 sidebar: ont_doc_zh
-permalink: ontology-DID_zh.html
+permalink: ontology_DID_zh.html
+folder: doc_zh
 ---
 
 
-[English](./README.md)  /  中文
+[English](./ontology_DID_en.html)  /  中文
 
 
 <h1 align="center">Ontology Distributed Identity Framework (ONTID)  </h1>
-<h4 align="center">版本 0.6.0 </h4>
+<p align="center" class="version">Version 0.7.0 </p>
 
 ## 概述
 
@@ -81,6 +82,9 @@ Ontology DID（简称：ONT ID）是一个去中心化的身份标识协议，�
 希望成为信任锚，[这里](https://info.ont.io/cooperation/zh)申请加入。
 
 如果您是信任锚，请进入[>> 本体信任锚接入标准](./docs/cn/verification_provider_specification_cn.md)了解接入流程和标准。
+
+
+
 
 
 

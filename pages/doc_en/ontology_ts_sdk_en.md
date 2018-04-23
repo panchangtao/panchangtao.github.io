@@ -3,6 +3,7 @@ title:
 keywords: sample homepage
 sidebar: ont_doc_en
 permalink: ontology_ts_sdk_en.html
+folder: doc_en
 ---
 
 

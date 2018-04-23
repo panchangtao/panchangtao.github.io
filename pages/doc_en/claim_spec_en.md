@@ -3,13 +3,13 @@ title:
 keywords: sample homepage
 sidebar: ont_doc_en
 permalink: claim_spec_en.html
+folder: doc_en
 ---
 
-
-[中文版](../cn/claim_spec_cn.md)
+English / [中文](./claim_spec_zh.html)
 
 <h1 align="center">Verifiable Claim Protocol</h1>
-<h4 align="center">Version 0.7.0 </h4>
+<p align="center" class="version">Version 0.7.0 </p>
 
 The entire workflow of the verifiable claim is shown in the figure below. It contains three major parts:
 
@@ -17,7 +17,7 @@ The entire workflow of the verifiable claim is shown in the figure below. It con
 - Issue claim;
 - Verify claim.
 
-![claim workflow](../../images/claim_workflow.png)
+![claim workflow](./images/claim_workflow.png)
 
 ## 1. Issue 
 The issuance process of a verifiable claim involves two roles, the issuer and the recipient.

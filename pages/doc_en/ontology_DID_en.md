@@ -2,15 +2,16 @@
 title: 
 keywords: sample homepage
 sidebar: ont_doc_en
-permalink: ontology-DID_en.html
+permalink: ontology_DID_en.html
+folder: doc_en
 ---
 
 
-[中文版](./README_cn.md)
+English / [中文](./ontology_DID_zh.html)
 
 
 <h1 align="center">Ontology Distributed Identity Framework (ONTID) </h1>
-<h4 align="center">Version 0.6.0 </h4>
+<p align="center" class="version">Version 0.7.0 </p>
 
 ## Introduction
 
@@ -83,6 +84,9 @@ Trust Anchor refers to the partner that provides authentication services on the 
 [Here](https://info.ont.io/cooperation/en) to join us. 
 
 If you have been a trust anchor,please go to [>> The Access Standard for Trust Anchor](./docs/en/verification_provider_specification.md) for details.
+
+
+
 
 
 

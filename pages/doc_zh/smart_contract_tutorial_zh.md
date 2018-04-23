@@ -6,9 +6,10 @@ permalink: /smart_contract_tutorial_zh.html
 folder: doc_zh
 ---
 
+[English](./smart_contract_tutorial_en.html) / 中文
 
 <h1 align="center">Ontology Smart Contract</h1>
-<h4 align="center">Version V0.6.0 </h4>
+<p align="center" class="version">版本 0.7.0 </p>
 
 ## What is a smart contract?
 

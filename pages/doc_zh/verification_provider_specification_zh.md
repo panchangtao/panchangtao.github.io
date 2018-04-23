@@ -7,11 +7,11 @@ folder: doc_zh
 ---
 
 
-[English Version](../en/verification_provider_specification.md)
+[English](./verification_provider_specification_en.html) / 中文
 
 
 <h1 align="center">信任锚接入标准 </h1>
-<h3 align="center">版本 0.6.0 </h3>
+<p align="center" class="version">Version 0.7.0 </p>
 
 ## 概述
 

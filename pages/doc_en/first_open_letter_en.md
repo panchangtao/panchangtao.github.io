@@ -8,11 +8,11 @@ url: letter_en.html
 ---
 
 
-[中文版](./tutorial_for_developer_zh.html)
+English / [中文](./first_open_letter_zh.html)
 
 
 <h1 align="center">The First Open Letter to the Ontology Technology Community </h1>
-<h4 align="center">By Ontology | Updated 2018/03/30</h4>
+<p align="center" class="version">By Ontology | Updated 2018/03/30</p>
 
 Ontology will open source the first batch of projects this month, and with this the technical community will begin. Here the Ontology team has prepared the first open letter to the technical community, which describes the project structure for the first stage of Ontology, as well as the Ontology team's outlook on public chain design and future strategic direction. At the same time, this letter also invites the technical community to together invest in the development of blockchain.
 

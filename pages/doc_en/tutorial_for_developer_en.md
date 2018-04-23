@@ -3,14 +3,15 @@ title:
 keywords: sample homepage
 sidebar: ont_doc_en
 permalink: tutorial_for_developer_en.html
+folder: doc_en
 ---
 
 
-[中文](https://github.com/ontio/documentation/blob/master/zh-CN/tutorial_for_developer.md)
+English / [中文](./tutorial_for_developer_zh.html)
 
 
 <h1 align="center">Guide for Developers new to Ontology</h1>
-<h4 align="center">Version 0.6.0 </h4>
+<p align="center" class="version">Version 0.7.0 </p>
 
 ## Overview
 

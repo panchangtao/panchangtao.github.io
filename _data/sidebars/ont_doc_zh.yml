@@ -82,7 +82,7 @@ entries:
     folderitems:
 
     - title: 总体介绍
-      url: /ontology-DID_zh.html
+      url: /ontology_DID_zh.html
       output: web, pdf
 
     - title: Ontology DID身份标识协议规范
@@ -138,7 +138,10 @@ entries:
           url: /ontology_java_sdk_record_zh.html
           output: web
 
-
+    - title: TS SDK
+      url: /ontology_ts_sdk_zh.html
+      output: web, pdf
+      subfolders:
       - title: TS SDK
         output: web
         subfolderitems:
@@ -185,4 +188,12 @@ entries:
 
     - title: 总体介绍
       url: /ontology_ddxf_zh.html
+      output: web, pdf
+      
+  - title: FAQ
+    output: web, pdf
+    folderitems:
+
+    - title: FAQ
+      url: 
       output: web, pdf

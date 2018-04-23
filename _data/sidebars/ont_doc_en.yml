@@ -52,7 +52,7 @@ entries:
       url: /ontology_testnet_en.html
       output: web, pdf
 
-    - title: cli示例
+    - title: cli Samples
       url: 
       output: web, pdf
 
@@ -73,7 +73,7 @@ entries:
       url: 
       output: web, pdf
 
-    - title: 权限管理
+    - title: authority management
       url: 
       output: web, pdf
 
@@ -82,7 +82,7 @@ entries:
     folderitems:
 
     - title: Overview of Distributed Identity Framework
-      url: /ontology-DID_en.html
+      url: /ontology_DID_en.html
       output: web, pdf
 
     - title: Identification Protocol
@@ -106,7 +106,7 @@ entries:
       output: web, pdf
       subfolders:
 
-      - title: SDK
+      - title: Java SDK
         output: web
         subfolderitems:
 
@@ -139,7 +139,7 @@ entries:
           output: web
 
     - title: TS SDK
-      url: /ontology_java_sdk_en.html
+      url: /ontology_ts_sdk_en.html
       output: web, pdf
       subfolders:
       - title: TS SDK

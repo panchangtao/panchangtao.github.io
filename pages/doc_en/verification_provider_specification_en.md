@@ -3,14 +3,14 @@ title:
 keywords: sample homepage
 sidebar: ont_doc_en
 permalink: verification_provider_specification_en.html
+folder: doc_en
 ---
 
-
-[中文版](../cn/verification_provider_specification_cn.md)
+English / [中文](./verification_provider_specification_zh.html)
 
 
 <h1 align="center">The Access Standard for Trust Anchor</h1>
-<h3 align="center">Version 0.6.0 </h3>
+<p align="center" class="version">Version 0.7.0 </p>
 
 ## Introduction
 

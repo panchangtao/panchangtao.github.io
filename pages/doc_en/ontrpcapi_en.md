@@ -3,10 +3,13 @@ title:
 keywords: sample homepage
 sidebar: ont_doc_en
 permalink: ontrpcapi_en.html
+folder: doc_en
 ---
 
+English / [中文](./ontrpcapi_zh.html)
 
-# ONT Rpc Api
+<h1 align="center">Ontology Rpc Api</h1>
+<p align="center" class="version">Version 0.7.0 </p>
 
 * [Introduction](#Introduction)
 * [Rpc API list](#Rpc API list)

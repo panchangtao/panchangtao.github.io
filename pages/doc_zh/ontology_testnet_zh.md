@@ -7,10 +7,10 @@ folder: doc_zh
 
 
 
-[English](testnet.md) | 中文
+[English](./ontology_testnet_en.html) / 中文
 
-<h1 align="center">Ontology </h1>
-<p align="center" class="version">Version 0.7.0 </p>
+<h1 align="center">Ontology TestNet搭建</h1>
+<p align="center" class="version">版本 0.7.0 </p>
 
 
 ## 服务器部署

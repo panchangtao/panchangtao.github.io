@@ -3,12 +3,15 @@ title:
 keywords: sample homepage
 sidebar: ont_doc_en
 permalink: ontology_ts_sdk_smartcontract_en.html
+folder: doc_en
 ---
 
 
+English / [中文](./ontology_ts_sdk_smartcontract_zh.html)
 
+<h1 align="center">Deploy and invoke smart contract</h1>
+<p align="center" class="version">Version 0.7.0 </p>
 
-# Deploy and invoke smart contract
 
 ## 1. Deploy smart contract
 

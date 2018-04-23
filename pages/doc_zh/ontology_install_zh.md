@@ -5,20 +5,11 @@ permalink: ontology_install_zh.html
 folder: doc_zh
 ---
 
+[English](./ontology_install_en.html) / 中文
 
+<h1 align="center">构建开发环境 </h1>
+<p align="center" class="version">版本 0.7.0 </p>
 
-
-<h1 align="center">Ontology </h1>
-<h4 align="center">Version 0.7.0 </h4>
-
-[![GoDoc](https://godoc.org/github.com/ontio/ontology?status.svg)](https://godoc.org/github.com/ontio/ontology)
-[![Go Report Card](https://goreportcard.com/badge/github.com/ontio/ontology)](https://goreportcard.com/report/github.com/ontio/ontology)
-[![Travis](https://travis-ci.org/ontio/ontology.svg?branch=master)](https://travis-ci.org/ontio/ontology)
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ontio/ontology?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-
-[English](install.md) | 中文
-
-# 构建开发环境
 成功编译ontology需要以下准备：
 
 * Golang版本在1.9及以上
@@ -26,9 +17,9 @@ folder: doc_zh
 * 正确的Go语言开发环境
 * Golang所支持的操作系统
 
-# 部署
-## 获取ontology
-### 从源码获取
+## 部署
+### 获取ontology
+#### 从源码获取
 克隆ontology仓库到 **$GOPATH/src/github.com/ontio** 目录
 
 ```shell
@@ -56,5 +47,5 @@ $ make
 
 * `ontology`: 节点程序/以命令行方式提供的节点控制程序
 
-### 从release获取
+#### 从release获取
 You can download at [release page](https://github.com/ontio/ontology/releases).
