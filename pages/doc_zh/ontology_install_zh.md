@@ -1,5 +1,5 @@
 ---
-title: Ontology
+title: 
 sidebar: ont_doc_zh
 permalink: ontology_install_zh.html
 folder: doc_zh

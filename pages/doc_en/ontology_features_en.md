@@ -1,5 +1,5 @@
 ---
-title: Ontology
+title: 
 sidebar: ont_doc_en
 permalink: ontology_features_en.html
 folder: doc_en

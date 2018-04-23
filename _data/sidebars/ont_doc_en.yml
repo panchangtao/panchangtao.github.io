@@ -40,15 +40,15 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: 功能和特点介绍
+    - title: features
       url: /ontology_features_en.html
       output: web, pdf
 
-    - title: 安装节点
+    - title: install
       url: /ontology_install_en.html
       output: web, pdf
 
-    - title: TestNet搭建
+    - title: testnet
       url: /ontology_testnet_en.html
       output: web, pdf
 

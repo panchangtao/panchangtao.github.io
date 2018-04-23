@@ -1,5 +1,5 @@
 ---
-title: Ontology
+title: 
 sidebar: ont_doc_zh
 permalink: ontology_testnet_zh.html
 folder: doc_zh
@@ -10,7 +10,7 @@ folder: doc_zh
 
 
 <h1 align="center">Ontology </h1>
-<h4 align="center">Version 0.7.0 </h4>
+<p align="center" class="version">Version 0.7.0 </p>
 
 [![GoDoc](https://godoc.org/github.com/ontio/ontology?status.svg)](https://godoc.org/github.com/ontio/ontology)
 [![Go Report Card](https://goreportcard.com/badge/github.com/ontio/ontology)](https://goreportcard.com/report/github.com/ontio/ontology)

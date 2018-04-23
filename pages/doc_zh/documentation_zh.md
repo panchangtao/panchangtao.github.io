@@ -1,5 +1,5 @@
 ---
-title: Documentation_cn
+title: 
 sidebar: ont_doc_zh
 permalink: documentation_cn.html
 folder: doc_zh
