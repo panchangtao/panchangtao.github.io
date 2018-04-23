@@ -13,7 +13,7 @@ folder: doc_zh
 <p align="center" class="version">Version 0.7.0 </p>
 
 [![GoDoc](https://godoc.org/github.com/ontio/ontology?status.svg)](https://godoc.org/github.com/ontio/ontology)
-[![Go Report Card](https://goreportcard.com/badge/github.com/ontio/ontology)](https://goreportcard.com/report/github.com/ontio/ontology)
+[![Go Report Card](https://camo.githubusercontent.com/2e9915c767bfcd531d15633034a84b71202afefa/68747470733a2f2f676f7265706f7274636172642e636f6d2f62616467652f6769746875622e636f6d2f6f6e74696f2f6f6e746f6c6f6779)](https://goreportcard.com/report/github.com/ontio/ontology)
 [![Travis](https://travis-ci.org/ontio/ontology.svg?branch=master)](https://travis-ci.org/ontio/ontology)
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ontio/ontology?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
