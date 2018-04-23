@@ -6,32 +6,37 @@ permalink: standard_process_for_contributor_en.html
 ---
 
 
-## **社区贡献标准流程**
+[中文](https://github.com/ontio/documentation/blob/master/zh-CN/standard_process_for_contributor.md)
 
-#### 一、个人或小组技术贡献者
+# **Standard process for community contributions**
 
-##### 1、Proposal
+#### (1) Personal Developer or Group Technical contributions
 
-登录GITHUB的[OEPs](https://github.com/ontio/OEPs)，查看现有的proposal，也欢迎提出新的proposal，对于新提出的proposal要求必须作出原型实现，本体技术委员会通过评估提出的proposal对本体的贡献度以及原型实现的结果，之后立项并提交本体理事会报备。对于现有的proposal还没有代码实现的，也欢迎提出开发申请（pull request），本体技术委员会根据开发申请评估是否立项并提交本体理事会报备。如果部分proposal对本体有非常大的贡献或有深远影响，本体理事会将酌情考虑给予一定的激励。
+##### 1. Proposals
 
-##### 2、代码贡献
+Login to GitHub [OEPs](https://github.com/ontio/OEPs) to view existing proposals and make new proposals. New proposals must be prototyped. The Ontology technical committee evaluates proposals and their prototype results, then submits projects to the Ontology Council. Pull requests are also welcome for existing proposals with no code implementation. The Ontology Technical Committee evaluates whether to accept the project based on the development application and sends it to the Ontology Council. The Ontology Council will consider giving appropriate incentives if the proposal is a large contribution to Ontology or will have a large impact.
 
-立项之后就可以开始开发，请遵照[GITHUB标准流程](https://help.github.com/)提交pull request，由本体技术委员会进行评估同时提交本体理事会报备，之后根据评审结果给予激励。
+##### 2. Code contribution
 
-##### 3、BUG FIX
+After start the project you can start development. Please submit a pull request according to the [GitHub standard processes](https://help.github.com/). The Ontology Technical Committee will make an assessment and submit the report to the Ontology Council. It will then provide incentives based on the results of the assessment.
 
-如果发现BUG，请遵照GITHUB标准流程提交pull request，由本体技术委员会进行评估并提交本体理事会报备，之后根据评审结果给予激励。
+##### 3. Bug fixing
 
-##### 4、技术委员会
+If a bug is found, submit a pull request according to the GitHub standard processes, which is evaluated by the Ontology Technical Committee and submitted to the Ontology Council. After that, an incentive is given based on the evaluation result.
 
-欢迎社区人才加入到本体技术委员会，如有意向请在[Discord开发者社区](https://discord.gg/4TQujHj)提出申请。
+##### 4. Technical Committee
 
-#### 二、机构技术贡献者
+We welcome community talent to join the Ontology Technical Community. If you are interested, please apply in the [developer community on Discord区](https://discord.gg/4TQujHj).
 
-本体理事会欢迎机构来沟通和洽谈（[机构合作](https://info.ont.io/cooperation/en)），请注明GITHUB技术社区合作。本体理事会根据机构的proposal（含原型实现）、代码贡献和BUG FIX等，同步以周报的形式报备给本体理事会进行review（后续会使用JIRA来进行管理），定期将社区激励发放给合作机构。特别卓越的机构经过认可后本体可以考虑做一定的投资。
+#### (2) Developer community organizational cooperation
 
-<br><br>
-本体技术委员会：
+The Ontology Council welcomes organizations to discuss [cooperation](https://info.ont.io/cooperation/en) please indicate that you are requesting technical community cooperation. The Ontology Council will carry out reviews based on the proposal, code contributions, and weekly reviews (JIRA will be used for management). Incentives will be distributed to partner institutions on a regular basis. Particularly excellent organizations can be considered for investment from Ontology.
+
+
+
+
+
+Ontology Technical Committee：
 
 | **Group**                                     | **Name**     | **Discord**              | **GitHub**   | **Gitter**   |
 | --------------------------------------------- | ------------ | ------------------------ | ------------ | ------------ |
