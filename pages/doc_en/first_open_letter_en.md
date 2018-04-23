@@ -2,7 +2,7 @@
 title: 
 keywords: sample homepage
 sidebar: ont_doc_en
-permalink: letter_en.html
+permalink: first_open_letter_en.html
 folder: doc_en
 url: letter_en.html
 ---

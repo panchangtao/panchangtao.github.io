@@ -23,7 +23,7 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: 公开信
+    - title: 给社区开发者的公开信
       url: /first_open_letter_zh.html
       output: web, pdf
       type: homepage
@@ -41,15 +41,15 @@ entries:
     folderitems:
 
     - title: 功能和特点介绍
-      url: /ontology_zh.html
+      url: /ontology_features_zh.html
       output: web, pdf
 
     - title: 安装节点
-      url: 
+      url: /ontology_install_zh.html
       output: web, pdf
 
     - title: TestNet搭建
-      url: 
+      url: /ontology_testnet_zh.html
       output: web, pdf
 
     - title: cli示例
@@ -57,7 +57,7 @@ entries:
       output: web, pdf
 
       subfolders:
-      - title: RPC/Restful API
+      - title: RPC/Restful API  接口说明 
         output: web
         subfolderitems:
 
@@ -85,32 +85,32 @@ entries:
       url: /ontology-DID_zh.html
       output: web, pdf
 
-    - title: Identification Protocol
+    - title: Ontology DID身份标识协议规范
       url: /ONTID_protocol_spec_zh.html
       output: web, pdf
 
-    - title: Verifiable Claim Protocol
+    - title: 可信申明协议规范
       url: /claim_spec_zh.html
       output: web, pdf
 
-    - title: TrustAnchor Access Stardard
+    - title: 信任锚接入标准
       url: /verification_provider_specification_zh.html
       output: web, pdf
 
   - title: SDKs
     output: web, pdf
     folderitems:
-      
-    - title: TS SDK
-      url: 
-      output: web, pdf
 
+    - title: Java SDK
+      url: /ontology_java_sdk_en.html
+      output: web, pdf
       subfolders:
-      - title: Java SDK
+
+      - title: SDK
         output: web
         subfolderitems:
 
-        - title: 介绍和安装
+        - title: 介绍
           url: /ontology_java_sdk_zh.html
           output: web
 
@@ -133,10 +133,35 @@ entries:
         - title: 存证
           url: /ontology_java_sdk_record_zh.html
           output: web
-          
-    - title: Go SDK
-      url: 
-      output: web, pdf
+
+        - title: 错误码
+          url: /ontology_java_sdk_record_zh.html
+          output: web
+
+
+      - title: TS SDK
+        output: web
+        subfolderitems:
+
+        - title: 介绍
+          url: /ontology_ts_sdk_zh.html
+          output: web
+
+        - title: 数字身份管理
+          url: /ontology_ts_sdk_identity_claim_zh.html
+          output: web
+
+        - title: 数字资产管理
+          url: /ontology_ts_sdk_asset_zh.html
+          output: web
+
+        - title: 智能合约部署和调用
+          url: /ontology_ts_sdk_smartcontract_zh.html
+          output: web
+
+        - title: 错误码
+          url: /ontology_ts_sdk_record_zh.html
+          output: web
 
   - title: 智能合约
     output: web, pdf
@@ -146,12 +171,12 @@ entries:
       url: 
       output: web, pdf
 
-    - title: 智能合约开发指南
-      url: /smart_contract_tutorial_zh.html
+    - title: WASM-VM 简介
+      url: /smart_contract_tutorial_wasm_zh.html
       output: web, pdf
 
-    - title: Ontology wasm
-      url: /smart_contract_tutorial_wasm_zh.html
+    - title: 智能合约开发指南
+      url: /smart_contract_tutorial_zh.html
       output: web, pdf
 
   - title: DDXF
@@ -160,20 +185,4 @@ entries:
 
     - title: 总体介绍
       url: /ontology_ddxf_zh.html
-      output: web, pdf
-
-    - title: 数据交换协议ONT DATA
-      url: 
-      output: web, pdf
-
-    - title: 使用指南
-      url: 
-      output: web, pdf
-
-  - title: OEPs
-    output: web, pdf
-    folderitems:
-
-    - title: OEP Purpose and Guidelines
-      url: 
       output: web, pdf

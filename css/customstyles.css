@@ -1206,3 +1206,7 @@ div#toc {
     top: 67px;
     display: none;
 }
+
+div#main {
+    padding-top: 50px;
+}

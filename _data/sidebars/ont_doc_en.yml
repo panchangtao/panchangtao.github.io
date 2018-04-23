@@ -23,16 +23,16 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: open letter
-      url: /letter_en.html
+    - title: Open Letter to the Ontology Technology Community
+      url: /first_open_letter_en.html
       output: web, pdf
       type: homepage
 
-    - title: tutorial for developer
+    - title: Ontology developers tutorial
       url: /tutorial_for_developer_en.html
       output: web, pdf
 
-    - title: standard process for contributor
+    - title: Standard process for contributor
       url: /standard_process_for_contributor_en.html
       output: web, pdf
 
@@ -41,15 +41,15 @@ entries:
     folderitems:
 
     - title: 功能和特点介绍
-      url: /ontology_en.html
+      url: /ontology_features_en.html
       output: web, pdf
 
     - title: 安装节点
-      url: 
+      url: /ontology_install_en.html
       output: web, pdf
 
     - title: TestNet搭建
-      url: 
+      url: /ontology_testnet_en.html
       output: web, pdf
 
     - title: cli示例
@@ -69,7 +69,7 @@ entries:
           url: /restfulapi_en.html
           output: web
 
-    - title: 共识机制说明
+    - title: Consensus
       url: 
       output: web, pdf
 
@@ -81,7 +81,7 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: 总体介绍
+    - title: Overview of Distributed Identity Framework
       url: /ontology-DID_en.html
       output: web, pdf
 
@@ -101,79 +101,99 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: TS SDK
-      url: 
+    - title: Java SDK
+      url: /ontology_java_sdk_en.html
       output: web, pdf
-
       subfolders:
-      - title: Java SDK
+
+      - title: SDK
         output: web
         subfolderitems:
 
-        - title: 介绍和安装
+        - title:  Introduction
           url: /ontology_java_sdk_en.html
           output: web
 
-        - title: 节点控制
+        - title: node controll
           url: /ontology_java_sdk_blockchain_interop_en.html
           output: web
 
-        - title: 数字身份管理
+        - title: Digital Identity
           url: /ontology_java_sdk_identity_claim_en.html
           output: web
 
-        - title: 数字资产管理
+        - title: Digital Token
           url: /ontology_java_sdk_asset_en.html
           output: web
 
-        - title: 智能合约部署和调用
+        - title: How to use Smart Contract
           url: /ontology_java_sdk_smartcontract_en.html
           output: web
 
-        - title: 存证
+        - title: Attestation
           url: /ontology_java_sdk_record_en.html
           output: web
 
-    - title: Go SDK
-      url: 
-      output: web, pdf
+        - title: Errorcode
+          url: /ontology_java_sdk_record_en.html
+          output: web
 
-  - title: 智能合约
+    - title: TS SDK
+      url: /ontology_java_sdk_en.html
+      output: web, pdf
+      subfolders:
+      - title: TS SDK
+        output: web
+        subfolderitems:
+
+        - title:  Introduction
+          url: /ontology_ts_sdk_en.html
+          output: web
+
+        - title: Digital Identity
+          url: /ontology_ts_sdk_identity_claim_en.html
+          output: web
+
+        - title: Digital Token
+          url: /ontology_ts_sdk_asset_en.html
+          output: web
+
+        - title: How to use Smart Contract
+          url: /ontology_ts_sdk_smartcontract_en.html
+          output: web
+
+        - title: Errorcode
+          url: /ontology_ts_sdk_record_en.html
+          output: web
+
+  - title: SmartContract
     output: web, pdf
     folderitems:
 
-    - title: 总体介绍
+    - title: Overview of Ontology SmartContract
       url: 
       output: web, pdf
 
-    - title: 智能合约开发指南
-      url: /smart_contract_tutorial_en.html
+    - title: Introduction of WASM-VM
+      url: /smart_contract_tutorial_wasm_en.html
       output: web, pdf
 
-    - title: Ontology wasm
-      url: /smart_contract_tutorial_wasm_en.html
+    - title: smart contract tutorial
+      url: /smart_contract_tutorial_en.html
       output: web, pdf
 
   - title: DDXF
     output: web, pdf
     folderitems:
 
-    - title: 总体介绍
+    - title: Introduction
       url: /ontology_ddxf_en.html
       output: web, pdf
 
-    - title: 数据交换协议ONT DATA
-      url: 
-      output: web, pdf
-
-    - title: 使用指南
-      url: 
-      output: web, pdf
-
-  - title: OEPs
+  - title: FAQ
     output: web, pdf
     folderitems:
 
-    - title: OEP Purpose and Guidelines
+    - title: FAQ
       url: 
       output: web, pdf
