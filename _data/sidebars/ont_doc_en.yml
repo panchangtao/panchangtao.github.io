@@ -23,7 +23,7 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Open Letter to the Ontology Technology Community
+    - title: Open Letter to the Ontology...
       url: /first_open_letter_en.html
       output: web, pdf
       type: homepage
@@ -97,11 +97,10 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Java SDK
-      url: /ontology_java_sdk_en.html
+    - title: Overview
+      url: /overview_of_sdks_en.html
       output: web, pdf
       subfolders:
-
       - title: Java SDK
         output: web
         subfolderitems:
@@ -134,10 +133,6 @@ entries:
           url: /ontology_java_sdk_error_code_en.html
           output: web
 
-    - title: TS SDK
-      url: /ontology_ts_sdk_en.html
-      output: web, pdf
-      subfolders:
       - title: TS SDK
         output: web
         subfolderitems:

@@ -97,12 +97,11 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Java SDK
-      url: /ontology_java_sdk_en.html
+    - title: 总体说明
+      url: /overview_of_sdks_zh.html
       output: web, pdf
       subfolders:
-
-      - title: SDK
+      - title: Java SDK
         output: web
         subfolderitems:
 
@@ -134,10 +133,6 @@ entries:
           url: /ontology_java_sdk_error_code_zh.html
           output: web
 
-    - title: TS SDK
-      url: /ontology_ts_sdk_zh.html
-      output: web, pdf
-      subfolders:
       - title: TS SDK
         output: web
         subfolderitems:

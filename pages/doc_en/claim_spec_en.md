@@ -17,7 +17,7 @@ The entire workflow of the verifiable claim is shown in the figure below. It con
 - Issue claim;
 - Verify claim.
 
-![claim workflow](./images/claim_workflow.png)
+![claim workflow](./lib/images/claim_workflow.png)
 
 ## 1. Issue 
 The issuance process of a verifiable claim involves two roles, the issuer and the recipient.
