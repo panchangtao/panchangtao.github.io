@@ -1,3 +1,27 @@
+@font-face{
+	font-family:'SourceSansPro-Bold';
+	src:url('../fonts/SourceSansPro-Bold.otf');
+}
+@font-face{
+	font-family:'SourceSansPro-BoldIt';
+	src:url('../fonts/SourceSansPro-BoldIt.otf');
+}
+@font-face{
+	font-family:'SourceSansPro-It';
+	src:url('../fonts/SourceSansPro-It.otf');
+}
+@font-face{
+	font-family:'SourceSansPro-Light';
+	src:url('../fonts/SourceSansPro-Light.otf');
+}
+@font-face{
+	font-family:'SourceSansPro-LightIt';
+	src:url('../fonts/SourceSansPro-LightIt.otf');
+}
+@font-face{
+	font-family:'SourceSansPro-Regular';
+	src:url('../fonts/SourceSansPro-Regular.otf');
+}
 .summary {
     color: #808080;
     border-left: 5px solid #ED1951;
@@ -38,8 +62,7 @@ a[data-toggle="tooltip"] {
 }
 
 .navbar-inverse {
-    background-color: #000000;
-    border-color: #015CAE;
+    background-color: #444;
     position: fixed;
     width: 100%;
 }
@@ -155,7 +178,7 @@ p{
     margin-bottom: 15px !important;
 }
 body {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "SourceSansPro-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
     line-height: 1.42857143;
     color: #444 !important;
@@ -176,4 +199,22 @@ h4 {
 h5 {
     font-size: 16px !important;
     font-weight: bold;
+    font-family: "SourceSansPro-Bold","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+h1 {
+    font-family: "SourceSansPro-Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+h2  {
+    font-size: 30px !important;
+}
+h1 {
+    margin-top: 30px;
+}
+.version{
+    margin-top:20px;
+    margin-bottom:40px !important;
+    color:#afacac;
+}
+#mysidebar{
+    position: fixed;
 }

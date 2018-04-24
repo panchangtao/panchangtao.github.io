@@ -79,8 +79,9 @@ h4[id],
 h5[id],
 h6[id],
 dt[id]{
-padding-top: 60px;
-margin-top: -40px
+padding-top: 80px;
+margin-top: -40px;
+padding-bottom: 18px;
 }
 
 .post-content img {
@@ -287,7 +288,7 @@ li.dropdownActive a {
 
 .navbar-inverse .navbar-nav > li > a {
     background-color: transparent;
-    margin-top:10px;
+    margin-top:5px;
 }
 
 .post-content .rssfeedLink {
@@ -827,6 +828,7 @@ span.soft {
     right: 0px;
     padding:0px;
     border:0px !important;
+    color:#444 !important;
 }
 
 .endpoint {
@@ -937,6 +939,7 @@ a[href^="http://"]:after, a[href^="https://"]:after {
     display: inline-block;
     text-decoration: none;
     padding-left: 3px;
+    transform: translate(0%,10%);
 }
 
 /* Strip the outbound icon when this class is present */
@@ -1214,3 +1217,7 @@ div#toc {
 div#main {
     padding-top: 50px;
 }
+/* a {
+    color: #32a4be !important;
+    text-decoration: none
+} */
