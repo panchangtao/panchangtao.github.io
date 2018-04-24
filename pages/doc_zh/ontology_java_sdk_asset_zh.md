@@ -6,21 +6,24 @@ permalink: ontology_java_sdk_asset_zh.html
 folder: doc_zh
 ---
 
+[English](./ontology_java_sdk_asset_en.html) / 中文
+
+<h1 align="center"> Ontology Java SDK User Guide </h1>
+<p align="center" class="version">Version 0.7.0 </p>
 
 
-## Digital assets
+# 数字资产
 
-### **Data structure**
-`address` base58 encoded account address  
-`label` name of account  
-`isDefault`indicates whether the account is a default one, whose default value is set as "false"  
-`lock` indicates whether the account is locked by client users, who cannot spend in locked account  
-`algorithm` name of encryption algorithm  
-`parameters` encryption parameters  
-`curve` elliptic curve  
-`key` NEP-2 private key, whose value can be null (in case of read-only or non-standard address)  
-`contract` smart contract, whose value can be null (in case of read-only address)  
-`extra` extra information stored by client developer, whose value can be null  
+## 数据结构说明
+`address` 是base58编码的账户地址。
+`label` 是账户的名称。
+`isDefault`表明账户是否是默认的账户。默认值为false。
+`lock` 表明账户是否是被用户锁住的。客户端不能消费掉被锁的账户中的资金。
+`algorithm` 是加密算法名称。
+`parameters` 是加密算法所需参数。
+`curve` 是椭圆曲线的名称。
+`key` 是NEP-2格式的私钥。该字段可以为null（对于只读地址或非标准地址）。
+`extra` 是客户端存储额外信息的字段。该字段可以为null。
 
 ```
 public class Account {
@@ -31,12 +34,13 @@ public class Account {
     public String algorithm = "";
     public Map parameters = new HashMap() ;
     public String key = "";
-    public Contract contract = new Contract();
-
+    public Object extra = null;
+}
 ```
-### **Digital asset account management**
 
-**Create digital asset account**
+## 数字资产账户管理
+
+* 创建数字资产账号
 
 ```
 String url = "http://127.0.0.1:20386";
@@ -44,53 +48,53 @@ OntSdk ontSdk = OntSdk.getInstance();
 ontSdk.setRpcConnection(url);
 ontSdk.openWalletFile("wallet.json");
 Account acct = ontSdk.getWalletMgr().createAccount("password");
-//any account or identity, once created, are stored in the memory only. A write api should be invoked when writing to a wallet file.
+//创建的账号或身份只在内存中，如果要写入钱包文件，需调用写入接口
 ontSdk.getWalletMgr().writeWallet();
 ```
 
-**Remove digital asset account**
+
+* 移除数字资产账号
 
 ```
 ontSdk.getWalletMgr().getWallet().removeAccount(address);
-//write to wallet 
+//写入钱包 
 ontSdk.getWalletMgr().writeWallet();
 ```
 
-**Set default digital asset account**
+* 设置默认数字资产账号
 
 ```
 ontSdk.getWalletMgr().getWallet().setDefaultAccount(index);
 ontSdk.getWalletMgr().getWallet().setDefaultAccount("address");
 ```
-> Note:  
-> index: the account with such index number is set as the default account  
-> address: the account with such address is set as the default account
-----
+> Note: index表示设置第index个account为默认账户，address表示设置该address对应的account为默认账户
 
-### Native digital asset(Token) 
+## 原生数字资产
 
-#### Use SDK Method
+* 使用SDK方法
 
-We suggest that you use SDK method directly to deal with native digital asset.
+我们建议您使用SDK封装的方法操作原生数字资产，比如 ONT Token等。
 
 ```
-//step1:get sdk instance
+//step1:获得ontSdk实例
 OntSdk wm = OntSdk.getInstance();
 wm.setRpcConnection(url);
 wm.openWalletFile("OntAssetDemo.json");
-//step2:get ontAssetTx instance
+//step2:获得ontAssetTx实例
 ontAssetTx = ontSdk.getOntAssetTx()
-//step3:transfer 
+//step3:调用转账方法
+ontAssetTx.sendTransfer(from,to,value)
 ontSdk.getOntAssetTx().sendTransferToMany("ont",info1.address,"passwordtest",new String[]{info2.address,info3.address},new long[]{100L,200L});
 ontSdk.getOntAssetTx().sendTransferFromMany("ont", new String[]{info1.address, info2.address}, new String[]{"passwordtest", "passwordtest"}, info3.address, new long[]{1L, 2L});
 ontSdk.getOntAssetTx().sendOngTransferFrom(info1.address,"passwordtest",info2.address,100);
 ```
 
-#### Use Smart Contract
 
-You also use smart contract to deal with  native digital asset.
+* 使用智能合约
 
-Ontology smart contract ABI describes the functional interface of smart contract and supports parameter transfer:
+您也可以使用智能合约操作原生数字资产。
+
+ontology资产智能合约abi文件，abi文件是对智能合约函数接口的描述，通过abi文件可以清楚如何传参：
 
 ```
 {
@@ -150,32 +154,32 @@ Ontology smart contract ABI describes the functional interface of smart contract
 }
 ```
 
-How to transfer assets by invoking Ontology asset smart contract?
+通过调用ontology资产智能合约进行转账操作
 
 ```
-//step1: read smart contract ABI
+//step1:读取智能合约abi文件
 InputStream is = new FileInputStream("C:\\NeoContract1.abi.json");
 byte[] bys = new byte[is.available()];
 is.read(bys);
 is.close();
 String abi = new String(bys);
 
-//step2：parse ABI file
+//step2：解析abi文件
 AbiInfo abiinfo = JSON.parseObject(abi, AbiInfo.class);
 
-//step3：set smart contract codehash
-ontSdk.setCodeHash(abiinfo.getHash());
+//step3：设置智能合约codeaddress
+ontSdk.setCodeAddress(abiinfo.getHash());
 
-//step4：select a function and set parameter value
+//step4：选择函数，设置函数参数
 AbiFunction func = abiinfo.getFunction("Transfer");
 System.out.println(func.getParameters());
-func.setParamsValue(param0.getBytes(),param1.getBytes(),param2.getBytes());
+func.setParamsValue(from.getBytes(),to.getBytes(),value.getBytes());
 
-//setp5：invoke contract
+//setp5：调用合约
 String hash = ontSdk.getSmartcodeTx().sendInvokeSmartCodeWithSign("passwordtest",addr,func);
 ```
 
-What would be the AbiInfo structure?
+AbiInfo结构是怎样的？
 
 ```
 public class AbiInfo {
@@ -195,29 +199,165 @@ public class Parameter {
     public String value;
 }
 ```
+## nep-5智能合约数字资产
+nep-5文档：
+>https://github.com/neo-project/proposals/blob/master/nep-5.mediawiki
 
-What is codehash?
-
-```
-codehash is the unique identifier of smart contract.
-```
-
-
-Why do we need to pass the account and its password when invoking?
+nep-5智能合约模板：
 
 ```
-User's signature, which is generated by the private key, is neccesary in the process of invoking a smart contract. And the private key is encrypted and stored in the wallet, which needs the password to decrypt.
+using Neo.SmartContract.Framework;
+using Neo.SmartContract.Framework.Services.Neo;
+using Neo.SmartContract.Framework.Services.System;
+using System;
+using System.ComponentModel;
+using System.Numerics;
+
+namespace Nep5Template
+{
+    public class Nep5Template : SmartContract
+    {
+        //Token Settings
+        public static string Name() => "Nep5Template Token";
+        public static string Symbol() => "TMP";
+        public static readonly byte[] community = "AXK2KtCfcJnSMyRzSwTuwTKgNrtx5aXfFX".ToScriptHash();
+        public static byte Decimals() => 8;
+        private const ulong factor = 100000000; //decided by Decimals()
+
+        //ICO Settings
+        private const ulong totalAmount = 1000000000 * factor;
+        private const ulong communityCap = 1000000000 * factor;
+
+        [DisplayName("transfer")]
+        public static event Action<byte[], byte[], BigInteger> Transferred;
+
+        public static Object Main(string operation, params object[] args)
+        {
+            if (Runtime.Trigger == TriggerType.Application)
+            {
+                if (operation == "init") return Init();
+                if (operation == "totalSupply") return TotalSupply();
+                if (operation == "name") return Name();
+                if (operation == "symbol") return Symbol();
+                if (operation == "transfer")
+                {
+                    if (args.Length != 3) return false;
+                    byte[] from = (byte[])args[0];
+                    byte[] to = (byte[])args[1];
+                    BigInteger value = (BigInteger)args[2];
+                    return Transfer(from, to, value);
+                }
+                if (operation == "balanceOf")
+                {
+                    if (args.Length != 1) return 0;
+                    byte[] account = (byte[])args[0];
+                    return BalanceOf(account);
+                }
+                if (operation == "decimals") return Decimals();
+            }
+            return false;
+        }
+
+        // 初始化参数
+        public static bool Init()
+        {
+            byte[] total_supply = Storage.Get(Storage.CurrentContext, "totalSupply");
+            if (total_supply.Length != 0) return false;
+
+            Storage.Put(Storage.CurrentContext, community, communityCap);
+            Transferred(null, community, communityCap);
+
+            Storage.Put(Storage.CurrentContext, "totalSupply", totalAmount);
+            return true;
+        }
+
+        // get the total token supply
+        // 获取已发行token总量
+        public static BigInteger TotalSupply()
+        {
+            Runtime.CheckSig(new byte[1]{ 1 },  new byte[]{2},new byte[]{ 3});
+            return Storage.Get(Storage.CurrentContext, "totalSupply").AsBigInteger();
+        }
+
+        // function that is always called when someone wants to transfer tokens.
+        // 流转token调用
+        public static bool Transfer(byte[] from, byte[] to, BigInteger value)
+        {
+            if (value <= 0) return false;
+            if (!Runtime.CheckWitness(from)) return false;
+            if (from == to) return true;
+            BigInteger from_value = Storage.Get(Storage.CurrentContext, from).AsBigInteger();
+            if (from_value < value) return false;
+            if (from_value == value)
+                Storage.Delete(Storage.CurrentContext, from);
+            else
+                Storage.Put(Storage.CurrentContext, from, from_value - value);
+            BigInteger to_value = Storage.Get(Storage.CurrentContext, to).AsBigInteger();
+            Storage.Put(Storage.CurrentContext, to, to_value + value);
+            Transferred(from, to, value);
+            return true;
+        }
+
+        // get the account balance of another account with address
+        // 根据地址获取token的余额
+        public static BigInteger BalanceOf(byte[] address)
+        {
+            return Storage.Get(Storage.CurrentContext, address).AsBigInteger();
+        }
+    }
+}
+```
+部署合约：
+```
+  InputStream is = new FileInputStream("C:\\smartcontract.avm");//
+  byte[] bys = new byte[is.available()];
+  is.read(bys);
+  is.close();
+  String code = Helper.toHexString(bys);
+  System.out.println("Code:" + Helper.toHexString(bys));
+  System.out.println("CodeAddress:" + Helper.getCodeAddress(code, VmType.NEOVM.value()));
+
+  ontSdk.setCodeAddress(Helper.getCodeAddress(code, VmType.NEOVM.value()));
+  Transaction tx = ontSdk.getSmartcodeTx().makeDeployCodeTransaction(code, true, "name", "v1.0", "author", "email", "desc", VmType.NEOVM.value());
+```
+调用合约：
+```
+  AbiInfo abiinfo = JSON.parseObject(nep5abi, AbiInfo.class);
+  //选个智能合约方法
+  AbiFunction func = abiinfo.getFunction("Transfer");
+  func.name = func.name.toLowerCase();
+  //设置方法的参数
+  func.setParamsValue(Address.decodeBase58(sendAddr).toArray(),Address.decodeBase58(recvAddr).toArray(),amount);
+  Transaction tx = sdk.getSmartcodeTx().invokeTransaction(sendAddr,password,func,VmType.NEOVM.value());
+  //签名
+  sdk.signTx(tx, sendAddr, password);
+  boolean b = sdk.getConnectMgr().sendRawTransaction(tx.toHexString());
 ```
 
-What is the pre-execution of smart contract when querying the assert and how to use it?
+## 说明
+
+* codeAddress是什么？
 
 ```
-Operations of smart contract, such as get, do not need to go through any consensus node. They read data directly from the storage of smart contract, execute at current node, and return the result. 
-We can call the pre-execution interface while sending transactions.。
+是智能合约的唯一标识。在这里代表资产合约的codeAddress。
+```
+
+* invoke时为什么要传入账号和密码？
+
+```
+调用智能合约时需要用户签名，钱包中保存的是加密后的用户私钥，需要密码才能解密获取私钥。
+```
+
+* 查询资产操作时，智能合约预执行是怎么回事，如何使用？
+
+```
+如智能合约get相关操作，从智能合约存储空间里读取数据，无需走节点共识，只在该节点执行即可返回结果。
+发送交易时调用预执行接口
 String result = (String) sdk.getConnectMgr().sendRawTransactionPreExec(txHex);
 ```
 
-How to view the push results when transferring funds？
+* 想查看转账时的推送结果？
 
 
-See smart contract using websocket connection call contract method，details[smartcontract](smartcontract.md)。
+请查看智能合约采用websocket连接调用合约方法，详见[smartcontract](smartcontract.md)。
+

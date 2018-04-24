@@ -10,7 +10,7 @@ folder: doc_en
 English / [中文](./smart_contract_tutorial_overview_zh.html)
 
 
-<h1 align="center">信任锚接入标准 </h1>
+<h1 align="center">智能合约总体介绍 </h1>
 <p align="center" class="version">Version 0.7.0 </p>
 
 ## 1. 简介

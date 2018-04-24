@@ -127,11 +127,11 @@ entries:
           output: web
 
         - title: Attestation
-          url: /ontology_java_sdk_record_en.html
+          url: /ontology_java_sdk_attestation_en.html
           output: web
 
         - title: Errorcode
-          url: /ontology_java_sdk_record_en.html
+          url: /ontology_java_sdk_error_code_en.html
           output: web
 
     - title: TS SDK
@@ -159,7 +159,7 @@ entries:
           output: web
 
         - title: Errorcode
-          url: /ontology_ts_sdk_record_en.html
+          url: /ontology_ts_sdk_error_code_en.html
           output: web
 
   - title: SmartContract

@@ -6,11 +6,12 @@ permalink: ontology_ts_sdk_asset_zh.html
 folder: doc_zh
 ---
 
+[English](./ontology_ts_sdk_asset_en.html) / 中文
 
+<h1 align="center">数字资产管理 </h1>
+<p align="center" class="version">Version 0.7.0 </p>
 
-## 数字资产管理
-
-### 钱包 Wallet
+## 钱包 Wallet
 
 钱包Wallet是一个Json格式的数据存储文件。在本体Ontology中， Wallet既可存储数字身份，也可以存储数字资产。
 

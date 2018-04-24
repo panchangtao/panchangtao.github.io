@@ -1,19 +1,22 @@
 ---
 title: 
 keywords: sample homepage
-sidebar: ont_doc_en
-permalink: ontology_java_sdk_record_en.html
-folder: doc_en
+sidebar: ont_doc_zh
+permalink: ontology_java_sdk_attestation_zh.html
+folder: doc_zh
 ---
 
+[English](./ontology_java_sdk_attestation_en.html) / 中文
+
+<h1 align="center"> Ontology Java SDK User Guide </h1>
+<p align="center" class="version">Version 0.7.0 </p>
+
+# 数字存证
+
+## 操作步骤
 
 
-## Attest Attestation
-
-### Step
-
-
-1. SDK init
+* 1.初始化SDK
 
 
 ```
@@ -29,31 +32,29 @@ wm.openWalletFile("RecordTxDemo.json");
 wm.setCodeAddress("803ca638069742da4b6871fe3d7f78718eeee78a");
 ```
 
-> Note: codeAddress is the address of the record contract。
+> Note: codeAddress是存证合约地址。
 
 
-2. attest data onto the blockchain
+* 2. 将数据保存到链上
 
 
 ```
 String res = ontSdk.getRecordTx().sendPut("TA9WXpq7GNAc2D6gX9NZtCdybRq8ehGUxw","passwordtest","key","value");
 ```
 
-> Note: The key represents the key of the data value stored in the chain, which can later be stored according to the key.
+> Note: key表示存到链上数据value的key，以后可以根据key获得存的数据value。
 
 
-3. Get data from the chain by the key
+* 3. 根据key从链上获得数据
 
 
 ```
 String res = ontSdk.getRecordTx().sendGet("TA9WXpq7GNAc2D6gX9NZtCdybRq8ehGUxw","passwordtest","key");
 ```
 
-
-4. description of response 
-
+* 4. 返回值说明
 
 ```
 {"Data":{"Algrithem":"SM2","Hash":"","Text":"value","Signature":""},"CAkey":"","SeqNo":"","Timestamp":0}
 ```
-> Note: Algrithem:encryption algorithm name，Hash:record hash，Text:stored value，Signature:signing the record hash，CAkey:initiator identity flag，SeqNo:transaction serial number，Timestamp:external time stamp
+> Note: Algrithem:加密算法名，Hash:存证hash，Text:存的内容，Signature:对存证hash做的签名，CAkey:发起者身份标志，SeqNo:交易流水号，Timestamp:外部时间戳

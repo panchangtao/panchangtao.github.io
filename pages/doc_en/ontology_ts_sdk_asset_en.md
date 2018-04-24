@@ -6,12 +6,14 @@ permalink: ontology_ts_sdk_asset_en.html
 folder: doc_en
 ---
 
+English / [中文](./ontology_ts_sdk_asset_zh.html)
 
 
+<h1 align="center">Digital Asset Management </h1>
+<p align="center" class="version">Version 0.7.0 </p>
 
-## Digital Asset Management
 
-### Wallet
+## Wallet
 
 Wallet is a data storing file of JSON format. In the terms of Ontology, Wallet could store not only the digital identity but also digital assets.
 

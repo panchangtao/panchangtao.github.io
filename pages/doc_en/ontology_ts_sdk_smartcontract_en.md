@@ -9,9 +9,8 @@ folder: doc_en
 
 English / [中文](./ontology_ts_sdk_smartcontract_zh.html)
 
-<h1 align="center">Deploy and invoke smart contract</h1>
+<h1 align="center">Deploy & invoke smart contract</h1>
 <p align="center" class="version">Version 0.7.0 </p>
-
 
 ## 1. Deploy smart contract
 

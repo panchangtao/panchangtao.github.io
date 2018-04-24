@@ -8,8 +8,10 @@ folder: doc_zh
 
 
 
+[English](./ontology_ts_sdk_en.html) / 中文
+
 <h1 align="center">Ontology TypeScript SDK 开发者手册</h1>
-<h4 align="center">Version V0.6.0 </h4>
+<p align="center" class="version">Version 0.7.0 </p>
 
 ## 总体介绍
 
@@ -22,4 +24,6 @@ folder: doc_zh
 - [钱包文件规范](Wallet_File_Specification.md)
 - [数字身份及可信声明](identity_claim.md)
 - [数字资产](asset.md)
+- [智能合约的部署和调用](smart_contract cn.md)
 - [错误码](errorcode.md)
+

@@ -2,13 +2,15 @@
 title: 
 keywords: sample homepage
 sidebar: ont_doc_en
-permalink: ontology_ts_sdk_record_en.html
+permalink: ontology_ts_sdk_error_code_en.html
 folder: doc_en
 ---
 
+English / [中文](./ontology_ts_sdk_error_code_zh.html)
 
 
-## Error code
+<h1 align="center">Error Code </h1>
+<p align="center" class="version">Version 0.7.0 </p>
 
 | Return Code | Description                   | Explaination                                     |
 | :----       | ----------------------------- | -----------------                                |

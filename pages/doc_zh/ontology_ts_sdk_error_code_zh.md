@@ -2,13 +2,15 @@
 title: 
 keywords: sample homepage
 sidebar: ont_doc_zh
-permalink: ontology_ts_sdk_record_zh.html
+permalink: ontology_ts_sdk_error_code_zh.html
 folder: doc_zh
 ---
 
+[English](./ontology_ts_sdk_error_code_en.html) / 中文
 
+<h1 align="center">错误码</h1>
+<p align="center" class="version">Version V0.7.0 </p>
 
-## 错误码
 
 | 返回代码  | 描述信息                          | 说明                |
 | :---- | ----------------------------- | ----------------- |

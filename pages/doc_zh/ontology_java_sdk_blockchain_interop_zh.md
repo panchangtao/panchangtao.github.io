@@ -6,133 +6,133 @@ permalink: ontology_java_sdk_blockchain_interop_zh.html
 folder: doc_zh
 ---
 
+[English](./ontology_java_sdk_blockchain_interop_en.html) / 中文
 
-## Basic blockchain interop
+<h1 align="center"> Ontology Java SDK User Guide </h1>
+<p align="center" class="version">Version 0.7.0 </p>
 
-The following describes basic blockchain interop function of SDK and defines relevant data structure.
+# 区块链交互基本操作
 
-Please use the following methods to initialize OntSDK use case before launching JAVA SDK.
+以下针对使用SDK和区块交互的基本操作，以及相关数据结构定义。
+
+用Java SDK之前，请使用以下方式初始化OntSDK实例。
 
 ```
-OntSdk wm = OntSdk.getInstance();
-wm.setRpc(rpcUrl);
-wm.setRestful(restUrl);
-wm.setDefaultConnect(wm.getRestful());
-wm.openWalletFile("OntAssetDemo.json");
+OntSdk ontSdk = OntSdk.getInstance();
+ontSdk.setRpc(rpcUrl);
+ontSdk.setRestful(restUrl);
+ontSdk.setDefaultConnect(wm.getRestful());
+ontSdk.openWalletFile("OntAssetDemo.json");
 ```
+> Note: setRestful表示采用restful接口建立连接，setRpc表示采用rpc接口建立连接,setDefaultConnect表示设置默认的链接方式。
 
-> Note: setRestful indicates that the connection is established using the restful interface, and setRpc indicates that the connection is established using the rpc interface,setDefaultConnect is used to set default connect method. 
+## 基本操作接口
 
-### Get the current block height
-
+* 获取当前区块高度
 ```
 int height = ontSdk.getConnectMgr().getBlockHeight();
 ```
 
-### Get block
+* 获取区块
 
 ```
 Block block = ontSdk.getConnectMgr().getBlock(9757);
 ```
 
-
-
-### Get blockchain node count
+* 获取区块链节点数
 
 ```
 System.out.println(ontSdk.getConnectMgr().getNodeCount());
 ```
 
-### Get block time
+* 获取出块时间
 
 ```
 System.out.println(ontSdk.getConnectMgr().getGenerateBlockTime());
 ```
 
-### Get blockchain-based transaction
+* 从区块链中获取交易
 
 ```
-String info = ontSdk.getConnectMgr().getTransaction(hash);
+String info = ontSdk.getConnectMgr().getTransaction(txhash);
 System.out.println(info);
 ```
-### Get InvokeTransaction 
+* 从区块链中获取InvokeCodeTransaction
 
 ```
-InvokeCodeTransaction t = (InvokeCodeTransaction) ontSdk.getConnectMgr().getRawTransaction(hash);
+InvokeCodeTransaction t = (InvokeCodeTransaction) ontSdk.getConnectMgr().getTransaction(txhash);
 System.out.println(t);
 ```
+## 数据结构说明
 
-## Data structure
-
-### Block
-
-| Field     |     Type |   Description   | 
-| :--------------: | :--------:| :------: |
-|    version|   int|  version  |
-|    prevBlockHash|   UInt256|  scripthash of the previous block|
-|    transactionsRoot|   UInt256|  merkel root of all the transactions in the block|
-|    blockRoot|   UInt256| block root|
-|    timestamp|   int| block time stamp, unix time stamp|
-|    height|   int|  block height |
-|    consensusData|   long |  consensus data |
-|    nextBookKeeper|   UInt160 |  bookkeeping contract scripthash of the next block |
-|    sigData|   array|  signature |
-|    bookKeepers|   array|  bookkeepers |
-|    hash|   UInt256 |  hash value of the block |
-|    transactions|   Transaction[] |  transaction list in the block |
-
-
-### Transaction
+* Block区块
 
 | Field     |     Type |   Description   | 
 | :--------------: | :--------:| :------: |
-|    version|   int|  version  |
-|    txType|   TransactionType|transaction type|
-|    nonce|   int |  random number|
-|    attributes|   Attribute[]|  transaction attribute list |
-|    fee|   Fee[] |  transaction fee list |
-|    networkFee|   long| network fee  |
-|    sigs|   Sign[]|   signature array  |
+|    version|   int|  版本号  |
+|    prevBlockHash|   UInt256|  前一个区块的散列值|
+|    transactionsRoot|   UInt256|  该区块中所有交易的Merkle树的根|
+|    blockRoot|   UInt256| 区块根|
+|    timestamp|   int| 区块时间戳，unix时间戳  |
+|    height|   int|  区块高度  |
+|    consensusData|   long |  共识数据 |
+|    nextBookKeeper|   UInt160 |  下一个区块的记账合约的散列值 |
+|    sigData|   array|  签名 |
+|    bookKeepers|   array|  验签者 |
+|    hash|   UInt256 |  该区块的hash值 |
+|    transactions|   Transaction[] |  该区块的交易列表 |
+
+
+* Transaction交易
+
+| Field     |     Type |   Description   | 
+| :--------------: | :--------:| :------: |
+|    version|   int|  版本号  |
+|    txType|   TransactionType|  交易类型|
+|    nonce|   int |  随机数|
+|    attributes|   Attribute[]|  交易属性列表 |
+|    fee|   Fee[] |  交易手续费列表 |
+|    networkFee|   long| 网络手续费  |
+|    sigs|   Sign[]|   签名数组  |
 |    payload| Payload |  payload  |
 
 
-
-
-### TransactionType
+* TransactionType交易类型
 
 | Value     |     Type |   Description   | 
 | :--------------: | :--------:| :------: |
-|    208|   int |  smart contract deployment |
-|    209|   int | smart contract invocation |
-|      0|   int |        Bookkeeping  |
-|      4|   int |     Enrollment       |
-|      5|   int |     Vote |
+|    208|   int |  部署智能合约交易|
+|    209|   int | 调用智能合约交易 |
+|      0|   int |     Bookkeeping   |
+|      4|   int |     注册       |
+|      5|   int |     投票 |
 
-### Signature Area
+
+* 签名字段
 
 | Field     |     Type |   Description   | 
 | :--------------: | :--------:| :------: |
-|    pubKeys|   array |  public key array|
+|    pubKeys|   array |  公钥数组|
 |    M|   int | M |
-|    sigData|   array | signature value array |
+|    sigData|   array | 签名值数组 |
 
 
-### Fee
+* Fee交易手续费
 
 | Field     |     Type |   Description   | 
 | :--------------: | :--------:| :------: |
-|    amount|   long|  amount|
-|    payer|   UInt160 | payer |
+|    amount|   long|  金额|
+|    payer|   Address | 付费者 |
 
-### Attribute
+* Attribute交易属性
 
 | Field    |     Type |   Description   | 
 | :--------------: | :--------:| :------: |
-|    usage |   AttributeUsage |  usage|
-|    data|   byte[] | attribute value |
+|    usage |   AttributeUsage |  用途|
+|    data|   byte[] | 属性值 |
 
 
-### TransactionAttributeUsage
+* TransactionAttributeUsage属性用途
 
 | Value     |     Type |   Description   | 
 | :--------------: | :--------:| :------: |

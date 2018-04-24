@@ -6,8 +6,12 @@ permalink: ontology_java_sdk_blockchain_interop_en.html
 folder: doc_en
 ---
 
+English / [中文](./ontology_java_sdk_blockchain_interop_zh.html)
 
-## Basic blockchain interop
+<h1 align="center"> Ontology Java SDK User Guide </h1>
+<p align="center" class="version">Version 0.7.0 </p>
+
+# Basic blockchain interop
 
 The following describes basic blockchain interop function of SDK and defines relevant data structure.
 
@@ -23,48 +27,50 @@ wm.openWalletFile("OntAssetDemo.json");
 
 > Note: setRestful indicates that the connection is established using the restful interface, and setRpc indicates that the connection is established using the rpc interface,setDefaultConnect is used to set default connect method. 
 
-### Get the current block height
+
+## Basic operation interfaces
+
+* Get the current block height
 
 ```
 int height = ontSdk.getConnectMgr().getBlockHeight();
 ```
 
-### Get block
+* Get block
 
 ```
 Block block = ontSdk.getConnectMgr().getBlock(9757);
 ```
 
-
-
-### Get blockchain node count
+* Get blockchain node count
 
 ```
 System.out.println(ontSdk.getConnectMgr().getNodeCount());
 ```
 
-### Get block time
+* Get block time
 
 ```
 System.out.println(ontSdk.getConnectMgr().getGenerateBlockTime());
 ```
 
-### Get blockchain-based transaction
+* Get blockchain-based transaction
 
 ```
 String info = ontSdk.getConnectMgr().getTransaction(hash);
 System.out.println(info);
 ```
-### Get InvokeTransaction 
+
+* Get InvokeTransaction
 
 ```
-InvokeCodeTransaction t = (InvokeCodeTransaction) ontSdk.getConnectMgr().getRawTransaction(hash);
+InvokeCodeTransaction t = (InvokeCodeTransaction) ontSdk.getConnectMgr().getTransaction(hash);
 System.out.println(t);
 ```
 
 ## Data structure
 
-### Block
+* Block
 
 | Field     |     Type |   Description   | 
 | :--------------: | :--------:| :------: |
@@ -82,7 +88,7 @@ System.out.println(t);
 |    transactions|   Transaction[] |  transaction list in the block |
 
 
-### Transaction
+* Transaction
 
 | Field     |     Type |   Description   | 
 | :--------------: | :--------:| :------: |
@@ -98,7 +104,7 @@ System.out.println(t);
 
 
 
-### TransactionType
+* TransactionType
 
 | Value     |     Type |   Description   | 
 | :--------------: | :--------:| :------: |
@@ -108,7 +114,7 @@ System.out.println(t);
 |      4|   int |     Enrollment       |
 |      5|   int |     Vote |
 
-### Signature Area
+* Signature Area
 
 | Field     |     Type |   Description   | 
 | :--------------: | :--------:| :------: |
@@ -117,14 +123,14 @@ System.out.println(t);
 |    sigData|   array | signature value array |
 
 
-### Fee
+* Fee
 
 | Field     |     Type |   Description   | 
 | :--------------: | :--------:| :------: |
 |    amount|   long|  amount|
 |    payer|   UInt160 | payer |
 
-### Attribute
+* Attribute
 
 | Field    |     Type |   Description   | 
 | :--------------: | :--------:| :------: |
@@ -132,7 +138,7 @@ System.out.println(t);
 |    data|   byte[] | attribute value |
 
 
-### TransactionAttributeUsage
+* TransactionAttributeUsage
 
 | Value     |     Type |   Description   | 
 | :--------------: | :--------:| :------: |

@@ -127,11 +127,11 @@ entries:
           output: web
 
         - title: 存证
-          url: /ontology_java_sdk_record_zh.html
+          url: /ontology_java_sdk_attestation_zh.html
           output: web
 
         - title: 错误码
-          url: /ontology_java_sdk_record_zh.html
+          url: /ontology_java_sdk_error_code_zh.html
           output: web
 
     - title: TS SDK
@@ -159,7 +159,7 @@ entries:
           output: web
 
         - title: 错误码
-          url: /ontology_ts_sdk_record_zh.html
+          url: /ontology_ts_sdk_error_code_zh.html
           output: web
 
   - title: 智能合约
