@@ -1,7 +1,7 @@
 ---
 title: 
 keywords: sample homepage
-sidebar: ont_doc_cn
+sidebar: doc_zh
 permalink: index.html
 ---
 
