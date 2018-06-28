@@ -1,7 +1,7 @@
 ---
 title: 
 keywords: sample homepage
-sidebar: doc_zh
+sidebar: pct_doc_zh
 permalink: first_open_letter_zh.html
 folder: doc_zh
 ---

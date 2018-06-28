@@ -1,7 +1,7 @@
 ---
 title: 
 keywords: sample homepage
-sidebar: doc_zh
+sidebar: pct_doc_zh
 permalink: index.html
 ---
 
