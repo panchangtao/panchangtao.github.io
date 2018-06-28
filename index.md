@@ -6,7 +6,7 @@ permalink: index.html
 ---
 
 
-English / [中文](./first_open_letter_zh.html)
+# English / [中文](./first_open_letter_zh.html)
 
 
 <h1 align="center">Welcome to eager7 blog </h1>
