@@ -149,7 +149,7 @@ entries:
           url: /ontology_ts_sdk_error_code_en.html
           output: web
 
-  - title: SmartContract
+  - title: 2018
     output: web, pdf
     folderitems:
 
@@ -165,13 +165,6 @@ entries:
       url: /smart_contract_tutorial_en.html
       output: web, pdf
 
-  - title: DDXF
-    output: web, pdf
-    folderitems:
-
-    - title: Introduction
-      url: /ontology_ddxf_en.html
-      output: web, pdf
 
   - title: FAQ
     output: web, pdf
