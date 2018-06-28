@@ -24,7 +24,7 @@ entries:
     folderitems:
 
     - title: linux笔记
-      url: /first_open_letter_zh.html
+      url: /first_open_letter_zh.md
       output: web, pdf
       type: homepage
 
