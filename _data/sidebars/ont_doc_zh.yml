@@ -19,16 +19,16 @@ entries:
       output: pdf
       type: frontmatter
 
-  - title: Introduction
+  - title: Linux
     output: web, pdf
     folderitems:
 
-    - title: 给社区开发者的公开信
+    - title: linux笔记
       url: /first_open_letter_zh.html
       output: web, pdf
       type: homepage
 
-    - title: 开发者新手指南
+    - title: 编译工具
       url: /tutorial_for_developer_zh.html
       output: web, pdf
 
@@ -36,7 +36,7 @@ entries:
       url: /standard_process_for_contributor_zh.html
       output: web, pdf
 
-  - title: Ontology
+  - title: ProgramTools
     output: web, pdf
     folderitems:
 
@@ -73,7 +73,7 @@ entries:
       url: /vbft_intro_zh.html
       output: web, pdf
 
-  - title: Ontology DID
+  - title: Golang
     output: web, pdf
     folderitems:
 
@@ -93,7 +93,7 @@ entries:
       url: /verification_provider_specification_zh.html
       output: web, pdf
 
-  - title: SDKs
+  - title: BlockChain
     output: web, pdf
     folderitems:
 
