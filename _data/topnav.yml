@@ -10,7 +10,7 @@ topnav_dropdowns:
   folders:
     - title: Language
       folderitems:
-        - title: ENGLISH
-          url: /first_open_letter_en.html
         - title: 中文
-          url: /first_open_letter_zh.html
+          url: /index.html
+        - title: ENGLISH
+          url: 
