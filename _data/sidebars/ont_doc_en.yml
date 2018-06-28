@@ -23,36 +23,28 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Open Letter to the Ontology...
+    - title: 交接培训
       url: /first_open_letter_en.html
       output: web, pdf
       type: homepage
-
-    - title: Ontology developers guide
-      url: /tutorial_for_developer_en.html
-      output: web, pdf
-
-    - title: Standard process for contributor
-      url: /standard_process_for_contributor_en.html
-      output: web, pdf
 
   - title: 2015
     output: web, pdf
     folderitems:
 
-    - title: features
+    - title: ABS0007
       url: /ontology_features_en.html
       output: web, pdf
 
-    - title: install
+    - title: ABX0070
       url: /ontology_install_en.html
       output: web, pdf
 
-    - title: testnet
+    - title: KiWi网关项目
       url: /ontology_testnet_en.html
       output: web, pdf
 
-    - title: cli Samples
+    - title: IOTC个人项目
       url: 
       output: web, pdf
 
@@ -69,7 +61,7 @@ entries:
           url: /restfulapi_en.html
           output: web
 
-    - title: Consensus
+    - title: Android开发笔记
       url: /vbft_intro_en.html
       output: web, pdf
 
