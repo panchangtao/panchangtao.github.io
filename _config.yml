@@ -5,16 +5,16 @@ repository: tomjoht/documentation-theme-jekyll
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: Ontology Documentation
+topnav_title: eager7 Blog
 # this appears on the top navigation bar next to the home button
 
-site_title: Ontology documentation
+site_title: eager7 documentation
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
-company_name: Ontology
+company_name: eager7
 # this appears in the footer
 
-github_editme_path: sulingxiao/sulingxiao.github.io/blob/master/
+github_editme_path: panchangtao/panchangtao.github.io/blob/master/
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
 # gitlab_editme_path: tomjoht/documentation-theme-jekyll/blob/gh-pages/
@@ -116,4 +116,4 @@ description: "Intended as a documentation theme based on Jekyll for technical wr
 
 # needed for sitemap.xml file only
 url: http://idratherbewriting.com
-baseurl: /ontio
+baseurl: /eager7
