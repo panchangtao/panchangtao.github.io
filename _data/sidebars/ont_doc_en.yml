@@ -19,7 +19,7 @@ entries:
       output: pdf
       type: frontmatter
 
-  - title: Introduction
+  - title: 2014
     output: web, pdf
     folderitems:
 
@@ -36,7 +36,7 @@ entries:
       url: /standard_process_for_contributor_en.html
       output: web, pdf
 
-  - title: Ontology
+  - title: 2015
     output: web, pdf
     folderitems:
 
@@ -73,7 +73,7 @@ entries:
       url: /vbft_intro_en.html
       output: web, pdf
 
-  - title: Ontology DID
+  - title: 2016
     output: web, pdf
     folderitems:
 
@@ -93,7 +93,7 @@ entries:
       url: /verification_provider_specification_en.html
       output: web, pdf
 
-  - title: SDKs
+  - title: 2017
     output: web, pdf
     folderitems:
 
